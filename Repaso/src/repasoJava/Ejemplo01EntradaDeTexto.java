@@ -20,6 +20,8 @@ public class Ejemplo01EntradaDeTexto {
 		} else {
 			System.out.println("Teneis la misma edad");
 		}
+		
+		entrada.close(); //cerrar clase Scanner
 	}
 
 }

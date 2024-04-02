@@ -39,5 +39,8 @@ public class Ejemplo03CadenasDeCaracteres {
 		String frase = "Hola que tal";
 		System.out.println(frase.substring(5));
 		System.out.println(frase.substring(5, 8));
+		
+		entrada.close(); //cerrar clase Scanner
 		}
+		
 }
