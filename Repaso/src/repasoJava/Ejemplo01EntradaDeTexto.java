@@ -11,7 +11,6 @@ public class Ejemplo01EntradaDeTexto {
 		System.out.println("Introduce tu edad");
 		edad = entrada.nextInt();
 		System.out.println("Tu edad es: " + edad);
-		
 	}
 
 }
