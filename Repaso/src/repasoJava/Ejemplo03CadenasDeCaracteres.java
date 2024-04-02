@@ -17,15 +17,17 @@ public class Ejemplo03CadenasDeCaracteres {
 		
 		String nombre = "Lucia";
 		System.out.println("Tu nombre es " + nombre);
-		System.out.println(nombre.length());
-		System.out.println(nombre.charAt(2));
+		System.out.println(nombre.length()); //Muestra el número de carácteres del String
+		System.out.println(nombre.charAt(2)); //Muestra la letra de la pposición determinada
 		char letra = nombre.charAt(3);
 		System.out.println(letra);
 		int numero = nombre.length() - 1;
 		System.out.println("La última letra es " + nombre.charAt(numero));
-		Scanner entrada = new Scanner(System.in);
+		
+		Scanner entrada = new Scanner(System.in); //Se crea el objeto Scanner 
 		System.out.println("Introduce el nombre de otra persona");
-		String otroNombre = entrada.next();
+		String otroNombre = entrada.nextLine(); //devuelve un String que se ha escrito
+		
 		System.out.println(nombre.equalsIgnoreCase(otroNombre));
 		if(nombre.equalsIgnoreCase(otroNombre)) {
 			System.out.println("Los nombres son iguales");
