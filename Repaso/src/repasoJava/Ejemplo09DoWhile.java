@@ -9,14 +9,14 @@ public class Ejemplo09DoWhile {
 
 		System.out.println("Este programa cuenta los caracteres de la palabra o frase introducida \n"
 				+ "Para terminar escribe salir");
-		/*String texto ="";
+		/*String texto =""; //Con while hay que inicializar la variable
 		while (!texto.equals("salir")) {
 			texto = JOptionPane.showInputDialog("Introduce el texto");
 			System.out.println("El texto introducido tiene " + texto.length() + " caracteres");
 		}
 		System.out.println("Has salido del programa");*/
 		
-		String texto;
+		String texto; //Con do while no nay que inicializar la variable
 		do {
 			texto = JOptionPane.showInputDialog("Introduce el texto");
 			System.out.println("El texto introducido tiene " + texto.length() + " caracteres"); 
