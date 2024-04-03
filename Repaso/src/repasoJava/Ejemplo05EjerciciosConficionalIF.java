@@ -2,7 +2,7 @@ package repasoJava;
 
 import javax.swing.JOptionPane;
 
-public class Ejemplo05FlujosEjercicios {
+public class Ejemplo05EjerciciosConficionalIF {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
