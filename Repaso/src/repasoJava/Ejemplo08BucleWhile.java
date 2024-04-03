@@ -52,7 +52,7 @@ public class Ejemplo08BucleWhile {
 				
 			}
 			introducido = Integer.parseInt(JOptionPane.showInputDialog("Introduce la clave"));
-
+ 
 		}
 		System.out.println("Correcto");
 		System.out.println(intentos);
