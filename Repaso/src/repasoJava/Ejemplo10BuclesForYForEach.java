@@ -73,6 +73,23 @@ public class Ejemplo10BuclesForYForEach {
 			
 		}
 		System.out.println(numero);
+		
+		
+		//For each
+		int [] valores = new int[5];
+		
+		valores[0]=1;
+		valores[1]=2;
+		valores[2]=3;
+		valores[3]=4;
+		valores[4]=5;
+		
+		for(int i = 0;i <valores.length; i++) {
+			System.out.println(valores[i]);
+		}
+		for(int elemento:valores) {
+			System.out.println(elemento);
+		}
 	}
 
 }
