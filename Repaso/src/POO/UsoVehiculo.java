@@ -23,6 +23,9 @@ public class UsoVehiculo {
 		coche2.setExtra(true, false);
 		System.out.println(coche1.getDatosVehiculo());
 		System.out.println(coche2.getDatosVehiculo());
+		
+		System.out.println(coche1.getExtra());
+		System.out.println(coche2.getExtra());
 	}
 
 }

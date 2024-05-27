@@ -34,6 +34,7 @@ public class Vehiculos {
 		color = "sin color";
 	}
 	
+	//Sobrecarga de constructores
 	public Vehiculos(int ruedas, int largo, int ancho, int peso, String color) { 
 		//Puede haber varios constructores con el mismo nombre, diferenciandose en los parámetros que recibe
 		this.ruedas = ruedas;
@@ -60,7 +61,7 @@ public class Vehiculos {
 		this.color = color;
 	}
 	
-	//Sobrecarga de constructores: Pueden llamarse igual siemprey cuando reciban distinto número de parámetros
+	//Sobrecarga de métodos: Pueden llamarse igual siemprey cuando reciban distinto número de parámetros
 	public void setExtra(boolean climatizador) {
 		this.climatizador = climatizador;
 	}
@@ -70,14 +71,39 @@ public class Vehiculos {
 		this.gps = gps;
 	}
 	
+	public void setExtra(boolean gps, boolean climatizador, boolean tapiceria) {
+		this.climatizador = climatizador;
+		this.gps = gps;
+		this.tapiceria = tapiceria;
+	}
+	
 	//Métodos getters
 	public String getColor() { //Devuelve un valor
 		return color;
 	}
 	
 	public String getExtra() {
-		if(climatizador) return "Tu coche tiene climatizador";
-		else return "Tu coche no tiene climatizador";
+		String climatizadorExtra;
+		String gpsExtra;
+		String tapiceriaExtra;
+		String extras = "Extras: ";
+		if(climatizador) climatizadorExtra = "\nTu coche lleva climatizador";
+		else climatizadorExtra = "\nTu coche no lleva climatizador";
+		
+		extras += climatizadorExtra;
+		
+		if(gps) gpsExtra = "\nTu coche lleva gps";
+		else gpsExtra = "\nTu coche no lleva gps";
+		
+		extras += gpsExtra;
+		
+		if(tapiceria) tapiceriaExtra = "\nTu coche lleva tapiceria";
+		else tapiceriaExtra = "\nTu coche no lleva tapiceria";
+		
+		extras += tapiceriaExtra;
+			
+			return extras;
+
 	}
 	
 	public String getDatosVehiculo() { //Método para mostrar los datos
