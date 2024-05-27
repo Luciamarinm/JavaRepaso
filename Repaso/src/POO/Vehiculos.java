@@ -20,6 +20,9 @@ public class Vehiculos {
 	private int largo;
 	private int ancho;
 	private int peso;
+	private boolean climatizador;
+	private boolean tapiceria;
+	private boolean gps;
 	
 	//Constructor
 	public Vehiculos() { //Deben llamarse igual que la clase
@@ -57,9 +60,24 @@ public class Vehiculos {
 		this.color = color;
 	}
 	
+	//Sobrecarga de constructores: Pueden llamarse igual siemprey cuando reciban distinto número de parámetros
+	public void setExtra(boolean climatizador) {
+		this.climatizador = climatizador;
+	}
+	
+	public void setExtra(boolean gps, boolean climatizador) {
+		this.climatizador = climatizador;
+		this.gps = gps;
+	}
+	
 	//Métodos getters
 	public String getColor() { //Devuelve un valor
 		return color;
+	}
+	
+	public String getExtra() {
+		if(climatizador) return "Tu coche tiene climatizador";
+		else return "Tu coche no tiene climatizador";
 	}
 	
 	public String getDatosVehiculo() { //Método para mostrar los datos
@@ -68,8 +86,12 @@ public class Vehiculos {
 				", largo = " + largo +
 				", ancho = " + ancho +
 				", peso = " + peso +
-				", color = " + color;
+				", color = " + color + 
+				", climatizador = " + climatizador +
+				", gps = " + gps +
+				", tapicería = " + tapiceria;
 		return datos;
 				
 	}
+	
 }

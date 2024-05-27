@@ -19,6 +19,10 @@ public class UsoVehiculo {
 		System.out.println(coche1.getDatosVehiculo());
 		System.out.println(coche2.getColor());
 		System.out.println(coche2.getDatosVehiculo());
+		coche1.setExtra(true);
+		coche2.setExtra(true, false);
+		System.out.println(coche1.getDatosVehiculo());
+		System.out.println(coche2.getDatosVehiculo());
 	}
 
 }
