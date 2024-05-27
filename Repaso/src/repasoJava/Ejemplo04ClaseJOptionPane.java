@@ -24,7 +24,7 @@ public class Ejemplo04ClaseJOptionPane {
 		int numero1 = Integer.parseInt(JOptionPane.showInputDialog("Introduce un número por favor:"));
 		int numero2 = Integer.parseInt(JOptionPane.showInputDialog("Introduce un número por favor:"));
 		double potencia = Math.pow(numero1, numero2);
-		System.out.println("El resultado de " + numero1 + " elevado a " + 3 + " es " + potencia);
+		System.out.println("El resultado de " + numero1 + " elevado a " + numero2 + " es " + potencia);
 	}
 
 }
